@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        h1 {/*Sets the style of h1 element*/
+            font-size: 90px;
+            font-family: monospace;
+            text-align: center;
+            margin: 0;
+        }
+        h2 {
+            font-size: 38px;
+            color: rgb(61, 15, 82);
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 28px;
+            text-align: center;
+        }
+        p {
+            font-size: 40px;
+        }
+        img.pic_ko { /*styles for images with the class pic_co*/
+            position: absolute;
+            right: 200px;
+            top: 400px;
+            max-width: 400px;
+            border-style: double;
+        }
+        .image-paragraph-container { /* Container styles for image and paragraph sections */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px;
+            padding: 10px;
+            max-width: 400px;
+            border: 2px solid black;
+            background-color: aliceblue;
+     
+        }
+        .image-paragraph-container img { /* Ensures images in the container are responsive */
+            max-width: 100%;    
+            height: auto;
+        }
+        .image-paragraph-container p { /* Styles for paragraphs inside the image-paragraph-container */
+            width: 300px; /*set a fixed with for paragraphs*/
+            padding: 10px;
+            font-size: 20px;
+            text-align:justify; /*justify the text allignment*/
+        }
+        .style_pic {   /* Styles for the layout of images and paragraphs */
+            display: flex;
+            justify-content: space-around;
+        }
+        header {
+            background-color: rgb(73, 128, 138);
+            padding: 25px;
+        }
+        body {
+            background-color: rgb(153, 180, 180);
+        }
+        section {
+            padding: 50px;
+            margin: 100px;
+            max-width: 1000px;
+           
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HI!</h1>
+        
+    </header>
+    <section>
+        <h2>About Me</h2>
+        <hr>
+        <img src="images/pic_ko.jpg" alt="Mypic" class="pic_ko">
+        <p>Charles Kit T. Miranda is a dedicated college student at the Technological University of the Philippines, 
+            currently in his 3rd year pursuing a Bachelor of Science in Information Systems. Charles aspires to become a skilled IT professional and contribute significantly to the industry's advancements. 
+            His goal is not just to become an IT professional but to achieve financial wealth in the process.</p>
+        <hr>
+    </section>
+    <section>
+        <h2>Hobbies</h2>
+        <div class="style_pic">
+            <div class="image-paragraph-container">
+                <img src="images/hobbies1.jpg" alt="Hobby 1">
+                <h3>Listening to music</h3>
+                <p>One of my favorite hobbies is listening to music, 
+                    as it helps me to relax. 
+                    Whether I’m discovering new artists or enjoying classic albums, music always brightens my day.</p>
+            </div>
+            <div class="image-paragraph-container">
+                <img src="images/hobbies2.jpg" alt="Hobby 2">
+                <h3>Cooking</h3>
+                <p>Another hobby of mine is cooking. Cooking also brings me joy
+                    when i share my creations with my family.
+                </p>
+            </div>
+            <div class="image-paragraph-container">
+                <img src="images/hobbies3.jpg" alt="Hobby 3">
+                <h3>Playing and Watching Basketball</h3>
+                <p>Lastly is playing and watching basketball, 
+                    as it combines physical activity with a sense of teamwork. 
+                    I love hitting the court with friends, enjoying the friendly competition. 
+                    Watching games allows me to appreciate the skill and strategy involved, 
+                    and it's always exciting to cheer for my favorite teams during crucial moments. </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Interests</h2>
+        <div class="style_pic">
+            <div class="image-paragraph-container">
+                <img src="images/interest1.png" alt="Interest 1">
+                <h3>Cybersecurity</h3>
+                <p> I'm interested in cybersecurity because it involves
+                    protecting important data from threats. I enjoy learning 
+                    about how hackers think and how to defend against them.
+                </p>
+            </div>
+            <div class="image-paragraph-container">
+                <img src="images/Interest2.jfif" alt="Interest 2">
+                <h3>Boxing</h3>
+                <p>I'm really interested in boxing because it combines physical fitness with strategy. 
+                    I love the discipline it requires and the mental toughness it builds.</p>
+            </div>
+            <div class="image-paragraph-container">
+                <img src="images/interest3.jfif" alt="Interest 3">
+                <h3>Online casino</h3>
+                <p>I find online casinos interesting because they're fun and exciting. I like trying out different games and seeing if I can win. </p>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
